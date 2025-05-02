@@ -38,5 +38,34 @@ def crearPaciente(dni, apellido, nombre, fecha_nac, nacionalidad):
 def getPacientes():
     return load_data()
     
-crearPaciente(998,"Ravioli","Peperoni","10-03","Italiano")
-print(getPacientes())
+
+def get_pacientes_by_name(nombre):
+
+    datos = load_data()
+    pacientes = []
+
+    for paciente in datos:
+        if nombre.lower() in paciente.get('nombre', '').lower():
+            pacientes.append(paciente)
+
+    return pacientes
+
+
+def get_pacientes_by_lastname(apellido):
+    datos = load_data()
+    pacientes = []
+
+    for paciente in datos:
+        if apellido.lower() in paciente.get('apellido', '').lower():
+            pacientes.append(paciente)
+    
+    return pacientes
+        
+
+
+
+
+
+"""print(getPacientes())"""
+print(get_pacientes_by_name('mile'))
+print(get_pacientes_by_lastname('pepe'))
