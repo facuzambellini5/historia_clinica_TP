@@ -8,8 +8,8 @@
     },
     {
         "dni": 12123412453,
-        "apellido": "pepe",
-        "nombre": "argento",
+        "apellido": "argento",
+        "nombre": "pepe",
         "fecha_nac": "26/12",
         "nacionalidad": "Argentina"
     },
@@ -33,5 +33,19 @@
         "nombre": "Peperoni",
         "fecha_nac": "10-03",
         "nacionalidad": "Italiano"
+    },
+    {
+        "dni": "12345678",
+        "apellido": "Gonzalez",
+        "nombre": "Juan",
+        "fecha_nac": "1990-01-01",
+        "nacionalidad": "Argentina"
+    },
+    {
+        "dni": "12412421",
+        "apellido": "ruiz",
+        "nombre": "mariana",
+        "fecha_nac": "1990-03-12",
+        "nacionalidad": "brasil"
     }
 ]
