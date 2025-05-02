@@ -1,0 +1,37 @@
+[
+    {
+        "dni": 123,
+        "apellido": "galarza",
+        "nombre": "milena",
+        "fecha_nac": "26/12",
+        "nacionalidad": "Argentina"
+    },
+    {
+        "dni": 12123412453,
+        "apellido": "pepe",
+        "nombre": "argento",
+        "fecha_nac": "26/12",
+        "nacionalidad": "Argentina"
+    },
+    {
+        "dni": 999,
+        "apellido": "nuevo",
+        "nombre": "paciente",
+        "fecha_nac": "01/01/2000",
+        "nacionalidad": "Uruguayo"
+    },
+    {
+        "dni": 1000,
+        "apellido": "nuevo",
+        "nombre": "paciente",
+        "fecha_nac": "01/01/2000",
+        "nacionalidad": "Chileno"
+    },
+    {
+        "dni": 998,
+        "apellido": "Ravioli",
+        "nombre": "Peperoni",
+        "fecha_nac": "10-03",
+        "nacionalidad": "Italiano"
+    }
+]
