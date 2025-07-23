@@ -1,0 +1,26 @@
+[
+    {
+        "id_historia": 1,
+        "fecha": "1998-03-15",
+        "enfermedad": "Leucemia",
+        "id_medico": 1,
+        "id_paciente": 9,
+        "observaciones": "Tratamiento en lesiones de la piel"
+    },
+    {
+        "id_historia": 2,
+        "fecha": "1998-04-15",
+        "enfermedad": "Migra\u00f1a",
+        "id_medico": 1,
+        "id_paciente": 10,
+        "observaciones": "Tratamiento para migra\u00f1a cr\u00f3nica"
+    },
+    {
+        "id_historia": 3,
+        "fecha": "1998-04-10",
+        "enfermedad": "Gripe",
+        "id_medico": 1,
+        "id_paciente": 9,
+        "observaciones": "Tratamiento para gripe"
+    }
+]

@@ -3,35 +3,35 @@
         "dni": 123,
         "apellido": "galarza",
         "nombre": "milena",
-        "fecha_nac": "26/12",
+        "fecha_nac": "2002-11-16",
         "nacionalidad": "Argentina"
     },
     {
         "dni": 12123412453,
         "apellido": "argento",
         "nombre": "pepe",
-        "fecha_nac": "26/12",
+        "fecha_nac": "2003-12-26",
         "nacionalidad": "Argentina"
     },
     {
         "dni": 999,
         "apellido": "nuevo",
         "nombre": "paciente",
-        "fecha_nac": "01/01/2000",
+        "fecha_nac": "2000-01-01",
         "nacionalidad": "Uruguayo"
     },
     {
         "dni": 1000,
         "apellido": "nuevo",
         "nombre": "paciente",
-        "fecha_nac": "01/01/2000",
+        "fecha_nac": "2000-01-01",
         "nacionalidad": "Chileno"
     },
     {
         "dni": 998,
         "apellido": "Ravioli",
         "nombre": "Peperoni",
-        "fecha_nac": "10-03",
+        "fecha_nac": "2003-10-01",
         "nacionalidad": "Italiano"
     },
     {
@@ -53,7 +53,7 @@
         "dni": "43932867",
         "apellido": "maglianessi",
         "nombre": "gaston",
-        "fecha_nac": "19-02-2002",
+        "fecha_nac": "2002-02-19",
         "nacionalidad": "coreano"
     },
     {
@@ -61,7 +61,31 @@
         "dni": 123123,
         "apellido": "Sandobal",
         "nombre": "Marisol",
-        "fecha_nac": "10-12-1997",
+        "fecha_nac": "1997-12-10",
         "nacionalidad": "coreana"
+    },
+    {
+        "id_paciente": 10,
+        "dni": 47537137,
+        "apellido": "Bignoli",
+        "nombre": "Araceli",
+        "fecha_nac": "2006-10-19",
+        "nacionalidad": "Argentina"
+    },
+    {
+        "id_paciente": 11,
+        "dni": "44222191",
+        "apellido": "Zambellini",
+        "nombre": "Facundo",
+        "fecha_nac": "2002-07-10",
+        "nacionalidad": "Argentino"
+    },
+    {
+        "id_paciente": 12,
+        "dni": "1235432",
+        "apellido": "Sanchez",
+        "nombre": "Rick",
+        "fecha_nac": "1962-1-20",
+        "nacionalidad": "USA"
     }
 ]

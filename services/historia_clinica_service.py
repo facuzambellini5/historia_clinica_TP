@@ -2,9 +2,9 @@ import json
 import os
 
 
-HISTORIA_CLINICA = "historia_clinica.json"
-PACIENTES_FILE = "pacientes.json"
-MEDICOS_FILE = "medicos.json"
+HISTORIA_CLINICA = "jsons/historia_clinica.json"
+PACIENTES_FILE = "jsons/paciente.json"
+MEDICOS_FILE = "jsons/medico.json"
 
 
 "CARGA LOS DATOS DEL JSON"
@@ -43,30 +43,37 @@ def save_historia_clinica(fecha, enfermedad, id_medico, id_paciente, observacion
         medicos = json.load(file)
 
     for paciente in pacientes:
-        if paciente.get("id_paciente") != id_paciente:
-            return "Paciente no encontrado."
+        if paciente.get("id_paciente") == id_paciente:
+            break
+    else:
+        return print("Paciente no encontrado.")
 
     for medico in medicos:
-        if medico.get("id_medico") != id_medico:
-            return "Médico no encontrado."
-        
+        if medico.get("id_medico") == id_medico:
+            break
+    else:
+        return print("Médico no encontrado.")
+    
+    if not fecha or not enfermedad or not observaciones:
+        return print("Todos los campos son obligatorios.")
+
 
     datos.append(historia_clinica)
     save_data(datos)
-    return "Historia clínica guardada con éxito."
+    return print("Historia clínica guardada con éxito.")
 
 "TRAER HISTORIA_CLINICA"
 def get_historia_clinica():
-    return load_data()
+    return print(load_data())
 
 "TRAER HISTORIA_CLINICA POR ID"
 def get_historia_clinica_by_id(id_historia):
     datos = load_data()
     for historia in datos:
         if historia.get("id_historia") == id_historia:
-            return historia
+            return print(historia)
     else:
-        return "Historia clínica no encontrada"
+        return print("Historia clínica no encontrada")
 
 "EDITAR HISTORIA_CLINICA"
 def edit_historia_clinica(id_historia, **kwargs):
@@ -77,9 +84,9 @@ def edit_historia_clinica(id_historia, **kwargs):
                 if key in historia:
                     historia[key] = value
             save_data(datos)
-            return "Historia clínica editada con éxito"
+            return print("Historia clínica editada con éxito")
         else:  
-            return "Historia clínica no encontrada"
+            return print("Historia clínica no encontrada")
 
 "ELIMINAR HISTORIA_CLINICA"
 
@@ -89,6 +96,5 @@ def delete_historia_clinica(id_historia):
         if historia.get('id_historia') == id_historia:
             datos.remove(historia)
             save_data(datos)
-            return "Historia clínica eliminada con éxito"
-        else:
-            return "Historia clínica no encontrada"
+            return print("Historia clínica eliminada con éxito")
+    return print("Historia clínica no encontrada")
